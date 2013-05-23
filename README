@@ -6,6 +6,8 @@ Backup		/backup
 Restore		/restore
 Steal		/steal <username>
 Shoot		/shoot
+Teleport    /teleport <username>
+			/tp <username>
 
 GodMode
 Prevents your player from taking any damage
@@ -22,3 +24,6 @@ Backs up your current Inventory and Armor, then copies the given usernames Inven
 Shoot
 Still testing this command, it appears not to work on TShock servers. Currently determining if there are any ways to circumvent this.
 This command enables you to spawn arrows at the mouse cursor via clicking. In the future you will be able to specify what projectile type and how many you would like to spawn per click.
+
+Teleport
+Moves you to the location of the player with the given username.
