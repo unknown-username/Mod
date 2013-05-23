@@ -53,15 +53,15 @@ namespace Terraria
 							main.loadLib(path);
 						}
 					}
-					Steam.Init();
-					if (Steam.SteamInit)
-					{
-						main.Run();
-					}
-					else
-					{
-						MessageBox.Show("Please launch the game from your Steam client.", "Error");
-					}
+                    //Steam.Init();
+                    //if (Steam.SteamInit)
+                    //{
+                        main.Run();
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Please launch the game from your Steam client.", "Error");
+                    //}
 				}
 				catch (Exception ex)
 				{
