@@ -7,7 +7,7 @@ Restore		/restore
 Steal		/steal <username>
 Shoot		/shoot
 Teleport	/teleport <username>
-			/tp <username>
+		/tp <username>
 
 GodMode
 Prevents your player from taking any damage
