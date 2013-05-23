@@ -1,0 +1,24 @@
+Modded Terraria Client (Terraria 1.1.2)
+
+GodMode		/god
+NoClip		/noclip
+Backup		/backup
+Restore		/restore
+Steal		/steal <username>
+Shoot		/shoot
+
+GodMode
+Prevents your player from taking any damage
+
+NoClip
+Allows unhindered movement through any obstacles and disables gravity. Slightly buggy, other users will not see you flying but occasionally may see you teleport into the sky.
+
+Backup
+Creates a copy of your Inventory and Armor in memory, so that it may be restored with Restore (/restore)
+
+Steal
+Backs up your current Inventory and Armor, then copies the given usernames Inventory and Armor into your character.
+
+Shoot
+Still testing this command, it appears not to work on TShock servers. Currently determining if there are any ways to circumvent this.
+This command enables you to spawn arrows at the mouse cursor via clicking. In the future you will be able to specify what projectile type and how many you would like to spawn per click.
