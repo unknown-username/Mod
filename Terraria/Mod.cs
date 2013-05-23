@@ -61,6 +61,8 @@ namespace Terraria
             m_Handler.Add(new Restore("restore"));
             m_Handler.Add(new Steal("steal"));
             m_Handler.Add(new Shoot("shoot"));
+            m_Handler.Add(new Teleport("tp"));
+            m_Handler.Add(new Teleport("teleport"));
         }
 
         public static void DeInit()

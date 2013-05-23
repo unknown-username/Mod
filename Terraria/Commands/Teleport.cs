@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Terraria
 {
-    class Steal : ModCommand
+    class Teleport : ModCommand
     {
-        public Steal(string name)
+        public Teleport(string name)
             : base(name)
         {
 
@@ -18,22 +18,15 @@ namespace Terraria
             //if there is an argument
             if (args.Count > 0)
             {
-                //backup inventory
-                Mod.BackupInventory = Main.player[Main.myPlayer].inventory;
-
-                //backup armor
-                Mod.BackupArmor = Main.player[Main.myPlayer].armor;
-
                 //locate player with name args[0]
                 int player = Helpers.FindPlayer(args[0]);
                 if (player >= 0)
                 {
-                    //copy what we want
-                    Main.player[Main.myPlayer].inventory = Main.player[player].inventory;
-                    Main.player[Main.myPlayer].armor = Main.player[player].armor;
+                    //set location to that of the other player
+                    Main.player[Main.myPlayer].position = Main.player[player].position;
 
                     //notify user of success
-                    Helpers.Result("Stole " + args[0] + "'s Inventory!", true);
+                    Helpers.Result("Teleported to " + args[0], true);
                     return;
                 }
 
@@ -43,7 +36,7 @@ namespace Terraria
             }
 
             //notify user of fail
-            Helpers.Result("Syntax: .steal <playername>");
+            Helpers.Result("Syntax: .tp <playername>");
         }
 
         public override void OnLeftClick(int MouseX, int MouseY)

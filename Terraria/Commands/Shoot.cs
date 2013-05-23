@@ -35,7 +35,8 @@ namespace Terraria
         {
             if (m_Shooting)
             {
-                int index = Projectile.NewProjectile(MouseX, MouseY, 0, 0, 2, 999999, 0.0f, 0xff);
+                //changed damage from 99999 to 175 to prevent TShock servers from disabling the player
+                int index = Projectile.NewProjectile(MouseX, MouseY, 0, 0, 2, 175, 0.0f, 0xff);
                 if (Main.netMode == 1)
                 {
                     NetMessage.SendData(0x1b, -1, -1, "", index, 0f, 0f, 0f, 0);

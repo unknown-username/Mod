@@ -41,6 +41,7 @@
     <Compile Include="Terraria\CombatText.cs" />
     <Compile Include="Terraria\Commands\Backup.cs" />
     <Compile Include="Terraria\Commands\CommandHandler.cs" />
+    <Compile Include="Terraria\Commands\Teleport.cs" />
     <Compile Include="Terraria\Commands\Shoot.cs" />
     <Compile Include="Terraria\Commands\Restore.cs" />
     <Compile Include="Terraria\Commands\Steal.cs" />
