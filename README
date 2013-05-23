@@ -6,7 +6,7 @@ Backup		/backup
 Restore		/restore
 Steal		/steal <username>
 Shoot		/shoot
-Teleport    /teleport <username>
+Teleport	/teleport <username>
 			/tp <username>
 
 GodMode
