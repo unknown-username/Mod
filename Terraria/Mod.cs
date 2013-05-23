@@ -27,6 +27,14 @@ namespace Terraria
             set { m_NoClip = value; }
         }
 
+        //Shoot
+        private static bool m_Shooting = false;
+        public static bool Shooting
+        {
+            get { return m_Shooting; }
+            set { m_Shooting = value; }
+        }
+
         //====================================================================================================
         //  Storage Variables
         //====================================================================================================

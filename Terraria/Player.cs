@@ -444,6 +444,22 @@ namespace Terraria
 		}
 		public void AddBuff(int type, int time, bool quiet = true)
 		{
+            //if we are using the shoot command we don't want to be silenced for spamming >:)
+            //I think the server is blocking or messages from being sent but at least this removes the buffs
+            if (Mod.Shooting)
+            {
+                switch (type)
+                {
+                    case 23:
+                    case 32:
+                    case 33:
+                        return;
+                    default:
+                        Helpers.Result("Buff Type: " + type, true);
+                        break;
+                }
+            }
+
 			if (!quiet && Main.netMode == 1)
 			{
 				NetMessage.SendData(55, -1, -1, "", this.whoAmi, (float)type, (float)time, 0f, 0);
