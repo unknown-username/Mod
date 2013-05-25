@@ -35,6 +35,20 @@ namespace Terraria
             set { m_Shooting = value; }
         }
 
+        //Lights
+        private static bool m_Lights = true;
+        public static bool Lights
+        {
+            get { return m_Lights; }
+            set { m_Lights = value; }
+        }
+        private static float m_LightMax = 1f;
+        public static float LightMax
+        {
+            get { return m_LightMax; }
+            set { m_LightMax = value; }
+        }
+
         //====================================================================================================
         //  Storage Variables
         //====================================================================================================
@@ -71,6 +85,7 @@ namespace Terraria
             m_Handler.Add(new Shoot("shoot"));
             m_Handler.Add(new Teleport("tp"));
             m_Handler.Add(new Teleport("teleport"));
+            m_Handler.Add(new Lights("lights"));
         }
 
         public static void DeInit()

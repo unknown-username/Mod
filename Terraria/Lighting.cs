@@ -2323,6 +2323,12 @@ namespace Terraria
 				return;
 			}
 			Lighting.lightColor *= Lighting.negLight;
+
+            if (Mod.Lights)
+            {
+                Lighting.lightColor = Mod.LightMax;
+                return;
+            }
 		}
 		private static void LightColorG(int i, int j)
 		{
@@ -2355,6 +2361,12 @@ namespace Terraria
 				return;
 			}
 			Lighting.lightColorG *= Lighting.negLight;
+
+            if (Mod.Lights)
+            {
+                Lighting.lightColorG = Mod.LightMax;
+                return;
+            }
 		}
 		private static void LightColorB(int i, int j)
 		{
@@ -2382,6 +2394,12 @@ namespace Terraria
 				return;
 			}
 			Lighting.lightColorB *= Lighting.negLight;
+
+            if (Mod.Lights)
+            {
+                Lighting.lightColorB = Mod.LightMax;
+                return;
+            }
 		}
 		private static void LightColor2(int i, int j)
 		{
@@ -2416,6 +2434,11 @@ namespace Terraria
 						Lighting.lightColor -= Lighting.negLight;
 					}
 				}
+
+                if (Mod.Lights)
+                {
+                    Lighting.lightColor = Mod.LightMax;
+                }
 			}
 			catch
 			{
@@ -2454,6 +2477,11 @@ namespace Terraria
 						Lighting.lightColorG -= Lighting.negLight;
 					}
 				}
+
+                if (Mod.Lights)
+                {
+                    Lighting.lightColorG = Mod.LightMax;
+                }
 			}
 			catch
 			{
@@ -2485,6 +2513,11 @@ namespace Terraria
 				{
 					Lighting.lightColorB -= Lighting.negLight;
 				}
+
+                if (Mod.Lights)
+                {
+                    Lighting.lightColorB = Mod.LightMax;
+                }
 			}
 			catch
 			{

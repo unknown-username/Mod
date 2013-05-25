@@ -11394,6 +11394,21 @@ namespace Terraria
 				}
 				Main.reforge = false;
 			}
+
+            //====================================================================================================
+            //  Mod GUI
+            //====================================================================================================
+
+            if (!Main.playerInventory)
+            {
+                //if (Mod.Lights)
+                //{
+                //    this.spriteBatch.DrawString(fontMouseText, "LightMax: " + Mod.LightMax.ToString(), new Vector2(20f, 140), Color.White, 0f, new Vector2(), 1f, SpriteEffects.None, 0f);
+                //}
+            }
+
+            //====================================================================================================
+
 			string text15 = "";
 			if (Main.playerInventory)
 			{
